@@ -27,7 +27,7 @@ def recommend(movie):
     return movies_lst,movies_poster
 movies=pickle.load(open('movies.pkl','rb'))
 similarity=pickle.load(open('similarity.pkl','rb'))
-st.title('Movie Recommender System')
+st.title('Movies Recommender System')
 selected_movie_name = st.selectbox(
     'Select a movie which you like : ',
     movies["title"].values)
